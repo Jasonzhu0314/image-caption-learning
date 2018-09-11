@@ -9,7 +9,7 @@
 ## 二、 模型
 ### 2.1 模型细节
 #### 2.1.1 整体网络结构：
-
+![](https://github.com/Jasonzhu0314/image-caption-learning/blob/master/pics/show_attention/network.jpg)
 #### 2.1.2 Encoder：
 获取图像的底层特征，论文中选取了VGGnet提取特征，选取了全连接层之前的feature map，大小为14x14x512，图像作为Decoder的输入为：
 
