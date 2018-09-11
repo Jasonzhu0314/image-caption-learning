@@ -33,7 +33,7 @@ def get_alpha(self, prev_h, pctx):
 ```
 
 ![s1.png](F:\Github Repository\image-caption-\pics\s1.png)
-（1）soft attention
+（1）确定的“soft” 注意力机制
 alpha 
 
 
