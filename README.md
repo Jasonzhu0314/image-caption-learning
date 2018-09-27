@@ -12,18 +12,24 @@
 1.A. Gupta, Y. Verma, and C. Jawahar. Choosing linguistics over vision to describe images. In AAAI, 2012
 
 2.M. Mitchell, X. Han, J. Dodge, A. Mensch, A. Goyal, A. Berg, K. Yamaguchi, T. Berg, K. Stratos, and H. Daum´e III. Midge: Generating image descriptions from computer vision detections. In EACL, 2012.
-
-#### 3. 在生成词的时候是否加入视觉信息
-两种方法：
-
-加入：
-NIC 
-
-不加入：
-
-
-
+- - -
 #### 已读论文
+
+| 模型结构 | 主要研究 |
+|--------|--------|
+|NIC|   只在语言模型的第一阶段加入图片信息     |
+|gLSTM|对NIC模型的改进，在语言模型循环阶段加入三种不同的信息比较结果 |
+|show and tell|在语言模型循环的各个阶段都加入图片信息|
+|show attention and tell|改变语言模型的输入，在生成单词的时候关注图像的不同区域|
+|know when to look| 在生成某些词的时候对于以前记忆的词的依赖高于对图片信息的依赖，学习一种β权重决定生成词的时候图片信息和以前存储的信息的占比|
+|m-RNN|在做多模型嵌入的时候，将来源于三个不同方面相加而不是拼接，并加入两层word embedding|
+|LRCN|在语言模型阶段使用了两层stack LSTM的语言模型|
+|learning recurrent visual represent|在基础结构不变的情况下，语言模型使用RNN，并在文本生成的时候对图片特征进行重构|
+
+
+- - -
+
+
 
 1.[2015_show attention and tell](https://github.com/Jasonzhu0314/image-caption-learning/blob/master/paper_list/show_and_tell_attention.md)
 
